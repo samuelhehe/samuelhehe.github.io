@@ -1,0 +1,33 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 浣滆�淇℃伅
+author: 
+  name: Samuelnotes
+  email: samuelwang95@gmail.com
+  link: http://www.samuelnotes.cn
+  github: http://github.com/samuelhehe
+
+# 绔欑偣淇℃伅
+title: Samuelnotes
+description: Samuelnotes鐨勫崥瀹�
+url: http://www.samuelnotes.cn
+rss_url: /pages/atom.xml
+
+# avatar澶村儚鍙奆avicon
+avatar:	http://git.samuelnotes.cn/images/headicon.jpg
+favicon:	http://git.samuelnotes.cn/images/slogo.jpg
+
+# google analytics 璁剧疆
+ga:
+  id: 
+  url: 
+
+# disqus 璁剧疆
+disqus:
+  shortname:gitsamuelnotescn
+  
