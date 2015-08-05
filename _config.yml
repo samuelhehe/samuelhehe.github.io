@@ -5,7 +5,7 @@ pygments: true
 kramdown:
   input: GFM
 
-# 浣滆�淇℃伅
+#  author info 
 author: 
   name: Samuelnotes
   email: samuelwang95@gmail.com
@@ -14,13 +14,13 @@ author:
 
 # 绔欑偣淇℃伅
 title: Samuelnotes
-description: Samuelnotes鐨勫崥瀹�
+description: Samuelnotes 
 url: http://www.samuelnotes.cn
 rss_url: /pages/atom.xml
 
-# avatar澶村儚鍙奆avicon
-avatar:	http://git.samuelnotes.cn/images/headicon.jpg
-favicon:	http://git.samuelnotes.cn/images/slogo.jpg
+# avatar澶村儚鍙奆 avicon
+avatar:	http://www.samuelnotes.cn/images/headicon.jpg
+favicon:	http://www.samuelnotes.cn/images/slogo.jpg
 
 # google analytics 璁剧疆
 ga:

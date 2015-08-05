@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Laravel 核心：控制反转（Inversion of Control）和门面模式（Facade）
+title: 控制反转（Inversion of Control）和门面模式（Facade）
 category: 技术
 tags: [PHP, Laravel]
 keywords: Laravel,PHP,IoC,Facade
