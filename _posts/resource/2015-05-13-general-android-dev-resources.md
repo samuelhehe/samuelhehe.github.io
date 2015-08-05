@@ -13,6 +13,10 @@ description: Android常用开发资源整理
 -<a href="http://developer.android.com/index.html">Android开发官网</a>
 Android开发者官网，不多说，开发标准，文档，都是从这里来的，多看看文档，例子挺好。 
 
+-<a href="http://developer.android.com/design/index.html">官方设计</a>
+-<a href="http://www.google.com/design/spec/material-design/introduction.html">Material design风格指导</a>
+俗话说不符合官方设计的App不是好App，两个设计链接，希望以后自己多往这方面思考一下。
+
 -<a href="http://android-developers.blogspot.com/">Android开发官网Blog</a>
 Android官网博客，关注一些最新的官方动态还是不错的。
 
