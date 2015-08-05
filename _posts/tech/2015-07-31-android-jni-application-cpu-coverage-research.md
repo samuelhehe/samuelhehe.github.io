@@ -17,4 +17,4 @@ description: android jni 引用so包种类，application.md 配置问题探究
 至于64位的cpu架构，我觉得暂时没有必要考虑， 目前世界各大手机厂商没有达成一致，没有推广开。
 即使有64位CPU的手机，也会兼容x86 CPU架构 的abi 配置 。
 还是慢慢的等待他们达成一致再说吧。
-总结：个人觉得如果so文件不大的话，或者apk打包大小没有限制的话，那就把armeabi armeabi-v7a ，mips ， x86 都给打包了，这是最为完美的解决方案。
+> 总结：个人觉得如果so文件不大的话，或者apk打包大小没有限制的话，那就把armeabi armeabi-v7a ，mips ， x86 都给打包了，这是最为完美的解决方案。
