@@ -26,6 +26,11 @@ Android官网博客，关注一些最新的官方动态还是不错的。
 -<a href="https://github.com/Trinea/android-open-project">Android开源汇总</a>
 这里有个叫做Trinea的大神整理的开源项目，挺全乎的。
 
+-<a href="http://www.trinea.cn/android/android-performance-demo/">性能优化几种方案</a>
+
+如果在一个稍微大一点的App中，性能优化就显得非常重要。以上几个链接是性能优化的。希望自己时刻考虑这方面内容。
+
+
 
 
 
