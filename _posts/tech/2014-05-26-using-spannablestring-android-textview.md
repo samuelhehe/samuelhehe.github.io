@@ -33,7 +33,7 @@ description: Textview 单行显示不同Style的方法， 整理了下。
 19 }  
 
 ```
-## 第二种：通过SpannableString进行Style formate
+## 第二种：通过SpannableString进行Style 格式化
 
 ```
  1 public class TextViewLinkActivity extends Activity {  
