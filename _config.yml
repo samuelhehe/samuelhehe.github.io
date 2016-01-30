@@ -12,24 +12,24 @@ author:
   link: http://www.samuelnotes.cn
   github: http://github.com/samuelhehe
 
-# 绔欑偣淇℃伅
+# 
 title: Samuelnotes
 description: Samuelnotes 
 url: http://www.samuelnotes.cn
 rss_url: /pages/atom.xml
 
-# avatar澶村儚鍙奆 avicon
+# avatar
 avatar:	http://www.samuelnotes.cn/images/headicon.jpg
-favicon:	http://www.samuelnotes.cn/images/slogo.jpg
+favicon: http://www.samuelnotes.cn/images/slogo.jpg
 
 # google analytics 璁剧疆
-ga:
-  id: 
-  url: 
+#ga:
+ # id: 71372190
+ # url: samuelnotesweb
 
 # disqus 璁剧疆
 disqus:
-  shortname:gitsamuelnotescn
+  shortname:samuelnotes
 
 # twitter
- twitter:  samuelnotes
+ twitter:samuelnotes
