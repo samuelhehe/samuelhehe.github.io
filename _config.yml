@@ -1,4 +1,4 @@
-permalink: /:year/:month/:day/: title.html
+permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 pygments: true
 
@@ -29,7 +29,7 @@ favicon: http://www.samuelnotes.cn/images/slogo.jpg
 
 # disqus 璁剧疆
 disqus:
-  shortname:samuelnotes
+shortname:samuelnotes
 
 # twitter
- twitter:samuelnotes
+twitter:samuelnotes
