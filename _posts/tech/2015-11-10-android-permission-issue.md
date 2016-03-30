@@ -11,13 +11,14 @@ description: Android5.0 permission install failure
 
 # 问题描述
 
-``` Failure [INSTALL_FAILED_DUPLICATE_PERMISSION perm=android.permission.BAIDU_LOCATION_SERVICE pkg=com.bmcc.ms.ui]      由于项目中引用的有百度地图SDK jar 包, 所以直接定位百度地图的引用,以及各种配置. 结果并没有发现什么异常, 而且大部分手机测试结果是没有问题的.
-于是在网络上找到了一篇帖子, 是在百度贴吧中找到的, 晒出来看一下:(http://tieba.baidu.com/p/3237226241)[http://tieba.baidu.com/p/3237226241]
+  ``` Failure [INSTALL_FAILED_DUPLICATE_PERMISSION perm=android.permission.BAIDU_LOCATION_SERVICE pkg=com.bmcc.ms.ui] ```
+    由于项目中引用的有百度地图SDK jar 包, 所以直接定位百度地图的引用,以及各种配置. 结果并没有发现什么异常,  而且大部分手机测试结果是没有问题的.
+于是在网络上找到了一篇帖子, 是在百度贴吧中找到的, 晒出来看一下:[http://tieba.baidu.com/p/3237226241](http://tieba.baidu.com/p/3237226241)
 仔细阅读后发现,这是Android 5.0加强权限控制导致的, 让我继续拿百度Google 得到原因. 
 
 # 解决办法
-## 经过查找了Google,发现了一些提示, 并且在国内的网站上也找到了类似的提示:
 
+## 经过查找了Google,发现了一些提示, 并且在国内的网站上也找到了类似的提示:
 	[http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins](http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins) 	[http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message](http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message)
 		[http://www.weste.net/2015/07-27/104873.html](http://www.weste.net/2015/07-27/104873.html) 
 		[http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/](http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/) 
@@ -26,8 +27,8 @@ description: Android5.0 permission install failure
 	很明显, 这样就意味着,我们安装了同一应用权限的签名的应用的话, 只能N选一了, 例如说安装了引用了百度地图sdk的应用,也就只能安装一个, 怪不得安装不成功, 问题找到了. 
 	
 ## 继续查找:
+
 	这么大的问题,百度肯定有解决的办法,继续查找百度地图SDK文档, 找到了答案:
-	
 	+个链接: [http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0](http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0) 
 	
 	<br/>
