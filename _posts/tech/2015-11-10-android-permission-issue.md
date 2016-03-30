@@ -29,10 +29,8 @@ description: Android5.0 permission install failure
 ## 继续查找:
     这么大的问题,百度肯定有解决的办法,继续查找百度地图SDK文档, 找到了答案:
 +个链接: [http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0](http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0) 
-	
-	<br/>
-　　	**【重要提醒】**
-	** 定位SDKv3.1版本之后，以下权限已不需要，请取消声明，否则将由于Android 5.0多帐户系统加强权限管理而导致应用安装失败。 <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission> **
+**【重要提醒】**
+** 定位SDKv3.1版本之后，以下权限已不需要，请取消声明，否则将由于Android 5.0多帐户系统加强权限管理而导致应用安装失败。 <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission> **
 
 # 总结
 
