@@ -18,10 +18,9 @@ description: Android5.0 permission install failure
 
 # 解决办法
  ## 经过查找了Google,发现了一些提示, 并且在国内的网站上也找到了类似的提示:
-	(http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins) [http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins]
-	(http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message) [http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message]
-	(http://www.weste.net/2015/07-27/104873.html) [http://www.weste.net/2015/07-27/104873.html]
-	(http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/) [http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/]
+	[http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins](http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins) 	[http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message](http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message)
+		[http://www.weste.net/2015/07-27/104873.html](http://www.weste.net/2015/07-27/104873.html) 
+		[http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/](http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/) 
 	** 正要安装的App的自定义权限与手机上已有App的自定义权限名字相同，但两个App具有不同的签名信息导致安装失败。 **
 	很明显, 这样就意味着,我们安装了同一应用权限的签名的应用的话, 只能N选一了, 例如说安装了引用了百度地图sdk的应用,也就只能安装一个, 怪不得安装不成功, 问题找到了. 
  ## 继续查找:
