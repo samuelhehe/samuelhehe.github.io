@@ -7,9 +7,6 @@ keywords:  Android OnLowMemory和OnTrimMemory
 description: Android OnLowMemory和OnTrimMemory 简单比较
 ---
 
-Android OnLowMemory和OnTrimMemory 简单比较
-====================================
-
 ### OnLowMemory
 
 OnLowMemory是Android提供的API，在系统内存不足，所有后台程序（优先级为background的进程，不是指后台运行的进程）都被杀死时，系统会调用OnLowMemory。系统提供的回调有：Application/Activity/Fragementice/Service/ContentProvider
