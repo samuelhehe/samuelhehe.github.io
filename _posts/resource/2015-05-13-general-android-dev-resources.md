@@ -21,8 +21,13 @@ Android开发者官网，不多说，开发标准，文档，都是从这里来�
 Android官网博客，关注一些最新的官方动态还是不错的。
 
 ### 高质量文章
-[http://www.ibm.com/developerworks/cn/opensource/theme/android/](http://www.ibm.com/developerworks/cn/opensource/theme/android/)
+-[http://www.ibm.com/developerworks/cn/opensource/theme/android/](http://www.ibm.com/developerworks/cn/opensource/theme/android/)
 Android IBM 发布的高质量文章 深入学习一些Android方面的技术文章还是不错的。
+
+-[http://www.android-studio.org/](http://www.android-studio.org/)Android-studio中文社区，可以下载一些常用资源，如果不想翻墙的话。
+
+-[codekk](http://p.codekk.com/)国内的一批开源小伙伴们搞的，里边有不少开源解析，技术分享， 还有工作推荐
+
 
 ### 开源
 -<a href="http://android-arsenal.com/">国外Android开源汇总</a>
