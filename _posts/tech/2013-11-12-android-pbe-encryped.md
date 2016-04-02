@@ -17,6 +17,7 @@ description: 对称加密解密系列使用 –PBE加解密算法
 ![pbe1](http://samuelnotes-wordpress.stor.sinaapp.com/uploads/2015/03/pbe1.png)
 
 下面是基于PBE在Client端与Server端的消息传递机制：
+
 ![pbe2](http://samuelnotes-wordpress.stor.sinaapp.com/uploads/2015/03/pbe2.png)
 
 代码我就不粘了，注释写的很清楚，如果用到可以通过下边链接直接下载
