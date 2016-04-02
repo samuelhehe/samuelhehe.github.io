@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android 获取应用的大小
-category: 生活
+category: 技术
 tags: [getAppsize ]
 keywords:  Android appSize
 description: Android 获取应用的大小
