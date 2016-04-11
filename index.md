@@ -16,3 +16,13 @@ title: Welcome
 这个博客通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll) 修改生成，非常感谢 [Peiwen Lu](https://github.com/P233)git 开发出这么漂亮的主题。
 
 我博客的源码托管在[Github](https://github.com/samuelhehe/samuelhehe.github.io)上，原博客地址(http://samuelnotes.sinaapp.com/) 
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b2ecb05d6684f5c8820ed9585bf0f290";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
