@@ -11,7 +11,9 @@ description: Android5.0 permission install failure
 
 ## 问题描述
 
-  ``` Failure [INSTALL_FAILED_DUPLICATE_PERMISSION perm=android.permission.BAIDU_LOCATION_SERVICE pkg=com.bmcc.ms.ui] ```
+  ``` 
+  Failure [INSTALL_FAILED_DUPLICATE_PERMISSION perm=android.permission.BAIDU_LOCATION_SERVICE pkg=com.bmcc.ms.ui] 
+  ```
     由于项目中引用的有百度地图SDK jar 包, 所以直接定位百度地图的引用,以及各种配置. 结果并没有发现什么异常,  而且大部分手机测试结果是没有问题的.
 于是在网络上找到了一篇帖子, 是在百度贴吧中找到的, 晒出来看一下:[http://tieba.baidu.com/p/3237226241](http://tieba.baidu.com/p/3237226241)
 仔细阅读后发现,这是Android 5.0加强权限控制导致的, 让我继续拿百度Google 得到原因. 
@@ -19,8 +21,12 @@ description: Android5.0 permission install failure
 ## 解决办法
 
 ### 经过查找了Google,发现了一些提示, 并且在国内的网站上也找到了类似的提示:
-	[http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins](http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins) [http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message](http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message)
+
+	[http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins](http://stackoverflow.com/questions/26491251/android-5-0-lollipop-app-install-shows-unknown-error-code-during-application-ins) 
+	[http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message](http://stackoverflow.com/questions/27043933/install-failed-duplicate-permission-c2d-message)
+	
 	[http://www.weste.net/2015/07-27/104873.html](http://www.weste.net/2015/07-27/104873.html)
+	
 	[http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/](http://lmbj.net/blog/solve-android-5.0-installed-app-failed-problem/) 
 	
    **正要安装的App的自定义权限与手机上已有App的自定义权限名字相同，但两个App具有不同的签名信息导致安装失败。**
@@ -28,11 +34,14 @@ description: Android5.0 permission install failure
 	
 ### 继续查找:
     这么大的问题,百度肯定有解决的办法,继续查找百度地图SDK文档, 找到了答案:
-    +个链接: [http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0](http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0)
+    +个链接: 
+    [http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0](http://developer.baidu.com/map/index.php?title=android-locsdk/guide/v5-0)
 <br>
 **【重要提醒】**
-**定位SDKv3.1版本之后，以下权限已不需要，请取消声明，否则将由于Android 5.0多帐户系统加强权限管理而导致应用安装失败。 <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>**
-
+**定位SDKv3.1版本之后，以下权限已不需要，请取消声明，否则将由于Android 5.0多帐户系统加强权限管理而导致应用安装失败。**
+  ```
+  <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+  ```
 ## 总结
 
  这也没什么好总结的, 总之我觉得还有有点要记住的:
