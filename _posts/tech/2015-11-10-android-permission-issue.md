@@ -47,8 +47,9 @@ description: Android5.0 permission install failure
 **定位SDKv3.1版本之后，以下权限已不需要，请取消声明，否则将由于Android 5.0多帐户系统加强权限管理而导致应用安装失败。**
 
   ```
-  <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+  <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
   ```
+  
 ## 总结
 
  这也没什么好总结的, 总之我觉得还有有点要记住的:
