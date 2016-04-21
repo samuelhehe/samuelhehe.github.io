@@ -10,7 +10,7 @@ description: 时间如流水，匆匆逝去。记下几笔，待将来细细咀�
 >  时间如流水，匆匆逝去。记下几笔，待将来细细咀嚼，以慰荒度之岁月。
 
 <li> 2016年3月10日 经过三年的时间，我和我老婆终于胜利会师，，，双方父母首长见面，亲朋好友同志们的见证下，我们订婚了。
-<img src="https://cloud.githubusercontent.com/assets/5669999/14706281/442d3286-07f0-11e6-934a-141c1f31c8e9.gif" height="200" width="200"/></li>
+<img src="https://cloud.githubusercontent.com/assets/5669999/14706281/442d3286-07f0-11e6-934a-141c1f31c8e9.gif" height="100" width="100"/></li>
 <li> 2016年1月15日 经过1.3.5版本到1.5.0版本之间的稳定性迭代与功能模块完善，终于与1月15日前后于Lenovo应用市场，360应用市场，小米应用市场首发。随后陆续登陆国内其他各大应用市场。</li>
 <li> 2015年9月8日  加入<a href="http://www.linjubangbang.com/jsp/about.html">北京市小间科技有限公司</a>，担任Android主程。
 <li> 2015年9月1日  离开了我工作了两年半的富士康，一个让我又恨又爱的地方。 
