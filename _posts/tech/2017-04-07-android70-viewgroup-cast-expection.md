@@ -85,7 +85,6 @@ java.lang.ClassCastException: android.view.ViewGroup$LayoutParams cannot be cast
 
 而且是Android 7.0 的新机器才会出现的问题（华为P9， 小米 5c 等 安装Android7.0 系统及其相关7.0 定制rom）
 
-
 解决办法 ：
 
 很无奈的办法
@@ -93,7 +92,7 @@ java.lang.ClassCastException: android.view.ViewGroup$LayoutParams cannot be cast
 <b>注意将ViewGroup.LayoutParams 改成 ListView 需要的 AbsListView.LayoutParams  </b>
 
 看图：
-![image]("https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android7.0_listview_viewgroup_cast_abslistview_exception.png")
+![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android7.0_listview_viewgroup_cast_abslistview_exception.png)
 
 问题已解决， 具体问什么Android7.0 才出现这样的问题。 详细的原因还没有深入研究，随后续上（个人估计是7.0 做了细致的转化限制，优化了没必要的多态性能损耗）。 
 
