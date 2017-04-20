@@ -1,21 +1,24 @@
 ---
 layout: post
-title: Android 7.0  groupview cast exception
+title: Android 7.0  viewgroup cast exception
 category: 技术
 tags: [android 7.0 exception ]
-keywords:  Android 7.0  groupview cast exception
-description: Android 7.0  groupview 强制转换相关异常解决
+keywords:  Android 7.0  viewgroup cast exception
+description: Android 7.0  viewgroup 强制转换相关异常解决
 ---
 
-Android 7.0  groupview 强制转换相关异常
+Android 7.0  viewgroup 强制转换相关异常
 ====================================
 
 android 7.0 ListView 添加FootView 动态设置 LayoutParams  导致强制转换异常，这里列一下异常和解决方法。
 （这里的错误仅在7.0及以上出现，其他版本暂无发现该问题）
 
-官网发布的changes 我当时没有怎么关注，后来在使用友盟统计的时候碰到了这个问题，才猛地想起来是这个原因
-看一下log截图：
+该部分代码是出现在ListView  动态添加FootView的时候。 
 
+用代码添加了一个View ， LayoutParams 没有使用ListView父类AbsListView而是使用ViewGroup.LayoutParams 引起的。
+
+
+具体的异常信息如下：
 <br/>
 
 ```
@@ -73,13 +76,27 @@ java.lang.ClassCastException: android.view.ViewGroup$LayoutParams cannot be cast
 
 
 ```
-
  
-
 <br/>
- ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android6_apache_entity_config.png")
 
-问题已解决， 还是希望以后多注意下依赖包的依赖项，并且考虑系统版本。
-<br/>
-附 官网的相关链接，[https://developer.Android.com/preview/behavior-changes.html](https://developer.Android.com/preview/behavior-changes.html)
+很简洁的异常信息，除了系统sdk 中的代码错误，并没有发现自己代码中的异常部分。 
+
+出现的机型：
+
+而且是Android 7.0 的新机器才会出现的问题（华为P9， 小米 5c 等 安装Android7.0 系统及其相关7.0 定制rom）
+
+
+解决办法 ：
+
+很无奈的办法
+
+<b>注意将ViewGroup.LayoutParams 改成 ListView 需要的 AbsListView.LayoutParams  </b>
+
+看图：
+
+ ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android7.0_listview_viewgroup_cast_abslistview_exception.png")
+
+问题已解决， 具体问什么Android7.0 才出现这样的问题。 详细的原因还没有深入研究，随后续上（个人估计是7.0 做了细致的转化限制，优化了没必要的多态性能损耗）。 
+
+
 
