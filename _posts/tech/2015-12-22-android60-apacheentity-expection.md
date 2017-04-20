@@ -16,11 +16,11 @@ android 6.0 sdk  apache httpclient 相关包移除后 导致相关依赖包的�
 看一下log截图：
 
 <br/>
- ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android6_apache_entity_error.png")
+ ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android6_apache_entity_error.png)
 将 下边代码配置gradle 文件 dependencies 中
 
 <br/>
- ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android6_apache_entity_config.png")
+ ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android6_apache_entity_config.png)
 
 问题已解决， 还是希望以后多注意下依赖包的依赖项，并且考虑系统版本。
 <br/>
