@@ -94,9 +94,40 @@ java.lang.ClassCastException: android.view.ViewGroup$LayoutParams cannot be cast
 看图：
 ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android7.0_listview_viewgroup_cast_abslistview_exception.png)
 
-问题已解决， 具体问什么Android7.0 才出现这样的问题。 详细的原因还没有深入研究，随后续上（个人估计是7.0 做了细致的转化限制，优化了没必要的多态性能损耗）。 
+问题已解决， 具体问什么Android7.0 才出现这样的问题。 详细的原因还没有深入研究，随后续上。 
 
 续：
+
+看图：
+
+![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/android7.0_listview_viewgroup_cast_abslistview_layoutparams.png)
+
+个人估计是 7.0 AbsListView.LayoutParams 虽然继承了ViewGroup.LayoutParams ， 但是AbsListView.LayoutParams 添加了ViewType 类型， 并且在上图中的1911行进行强制的转换操作。
+并且有相关的注释：
+我们尊重在需要添加的 FixedViewInfo中View的LayoutParams 参数。 否则我们将为你添加，没有进行类型强制转换检查的操作。
+
+并且在1913行的generateDefaultLayoutParams()中添加了生成了AbsListView.LayoutParams
+
+```
+
+@Override
+    protected ViewGroup.LayoutParams generateDefaultLayoutParams() {
+        return new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT, 0);
+    }
+
+```
+
+在 1015行重新添加了 对viewType的赋值
+
+```
+p.viewType = mAdapter.getItemViewType(position);
+
+```
+
+github上相关 issue ：
+
+[https://github.com/idunnololz/AnimatedExpandableListView/issues/3](https://github.com/idunnololz/AnimatedExpandableListView/issues/3)
 
 
 
