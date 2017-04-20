@@ -96,5 +96,9 @@ java.lang.ClassCastException: android.view.ViewGroup$LayoutParams cannot be cast
 
 问题已解决， 具体问什么Android7.0 才出现这样的问题。 详细的原因还没有深入研究，随后续上（个人估计是7.0 做了细致的转化限制，优化了没必要的多态性能损耗）。 
 
+续：
+
+
+
 
 
