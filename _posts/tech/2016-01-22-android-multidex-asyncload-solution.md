@@ -24,7 +24,7 @@ AndroidManifest 中子进程配置如下：
 可以看到 process 处 设置 ":mini"  这里的":mini" 代表的是启动另外的进程，该进程以“applicaitonId:mini”命名，以":"为开头 这种写法是简写方式，其属性属于当前应用的私有进程，代表了其他应用的组件不可以和它跑在进程中。  参考文档： Android开发艺术探索 第二章 IPC机制的2.2.1中指出，开启多进程看似简单，实则暗藏杀机。经过实际测试的确如此，首先Application 的onCreate 会被调用N次 ，N的次数 包含了各种进程的名称数和主进程数。 
 我们的操作就放在了attachBaseContext中 ，这是Android提供的方案，或者延伸为在attachBaseContext中同步加载dex的方案，它的好处是非常简单，所需的依赖集也非常少。 也就是说我们在启动加载过程中几乎不会出现NoClassFoundError , 话虽说如此，但实际测试中，碰到因此崩溃还是有的，测试工具是Testin ，但是测试报告，其中出现的错误机型，系统分布 确实是存在的。 这里我就不放截图了（因为我确实找不到了，登上testin 测试报告均已被清空，不知去向）
 
-	下边看一下在Application 子类 重写的attachBaseContext 方法的主要逻辑。
+下边看一下在Application 子类 重写的attachBaseContext 方法的主要逻辑。
 
 ![image](https://raw.githubusercontent.com/samuelhehe/samuelhehe.github.io/master/res/multidex_attach.png)
 
@@ -58,7 +58,7 @@ AndroidManifest 中子进程配置如下：
 	最后一点需要提的是 在LoadResActivity 中的配置中可以看到 style ，内容一般就是透明的背景。 这就是为了防止出现长时间加载黑屏的办法。
 以上代码已经整理好放在github 上 [https://github.com/samuelhehe/MultiDexSample](https://github.com/samuelhehe/MultiDexSample)欢迎批评指正，拍砖。
 
-参考链接：
+## 参考链接：
 * [Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚](http://blog.csdn.net/t12x3456/article/details/40837287)
 * [dex分包变形记](https://segmentfault.com/a/1190000004053072)
 * [Android dex分包方案](http://www.tuicool.com/articles/rEBVNfY)
